@@ -14,9 +14,16 @@
     <!-- Night Owl highlight.js の追加 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- 必要な言語モジュールを明示的に追加 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('pre code').forEach((el) => {
+          // 言語クラスが設定されていない場合はjavascriptとして処理
+          if (!el.className.includes('language-')) {
+            el.className += ' language-javascript';
+          }
           hljs.highlightElement(el);
         });
       });
