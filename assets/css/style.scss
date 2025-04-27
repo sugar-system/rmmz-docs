@@ -50,17 +50,7 @@ code {
   background-color: #363636;
 }
 
-// コードブロックのスタイル修正
-pre, pre.highlight, .highlight pre, .highlight {
-  background-color: #3a3a3a !important; // 強制上書き
-  color: #f0f0f0 !important;
-}
 
-// インラインコードにも適用
-code, .highlight code {
-  background-color: #3a3a3a !important;
-  color: #f0f0f0 !important;
-}
 
 // Night Owl風のシンタックスハイライト
 .highlight {
