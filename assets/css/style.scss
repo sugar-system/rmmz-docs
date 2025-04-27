@@ -31,9 +31,28 @@ a:hover {
   color: #9cc7ff;
 }
 
-// highlight.js用のスタイル調整
+// highlight.js用のスタイル調整 - 背景色を明示的に設定
 pre, code {
-  background-color: transparent !important;
+  background-color: #011627 !important; // Night Owl の暗い背景色に設定
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1em;
+}
+
+// コードブロックが適切に表示されるようにする
+.highlight, .highlight pre, .highlighter-rouge, .highlighter-rouge .highlight {
+  background-color: #011627 !important;
+  color: #d6deeb !important;
+}
+
+// Jekyll のデフォルトカラーをオーバーライド
+.highlight .err, .highlight .g, .highlight .l, .highlight .n, .highlight .x, .highlight .p,
+.highlight .ge, .highlight .gp, .highlight .gs, .highlight .gt, .highlight .ld, .highlight .m,
+.highlight .s, .highlight .na, .highlight .nb, .highlight .nc, .highlight .nd, .highlight .ne,
+.highlight .nf, .highlight .ni, .highlight .nl {
+  color: inherit !important;
 }
 
 // テーブルのスタイル調整
