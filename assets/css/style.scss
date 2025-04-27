@@ -3,15 +3,15 @@
 
 @import "{{ site.theme }}";
 
-// ベーススタイル（既存のダークモードスタイル）
+// Caymanテーマのダークモードカスタマイズ
 body {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
+  background-color: #2d2d2d; // 中間の暗さの背景色
+  color: #e0e0e0; // 明るめの文字色
 }
 
 .page-header {
   background-color: #155799;
-  background-image: linear-gradient(120deg, #155799, #443366);
+  background-image: linear-gradient(120deg, #155799, #443366); // ヘッダーの色調整
 }
 
 .main-content h1,
@@ -20,34 +20,16 @@ body {
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  color: #9ac9ff;
+  color: #9ac9ff; // 見出しの色を明るめの青に
 }
 
 a {
-  color: #64aaff;
+  color: #64aaff; // リンクの色
 }
 
 a:hover {
-  color: #9cc7ff;
+  color: #9cc7ff; // ホバー時のリンクの色
 }
-
-// highlight.js用のスタイル調整 - 背景色を明示的に設定
-pre, code {
-  background-color: #011627 !important; // Night Owl の暗い背景色に設定
-  border-radius: 4px;
-}
-
-pre {
-  padding: 1em;
-}
-
-// コードブロックが適切に表示されるようにする
-.highlight, .highlight pre, .highlighter-rouge, .highlighter-rouge .highlight {
-  background-color: #011627 !important;
-  color: #d6deeb !important;
-}
-
-
 
 // テーブルのスタイル調整
 .main-content table th,
@@ -63,11 +45,108 @@ pre {
   background-color: #363636;
 }
 
-// 特定のトークンタイプに色を強制適用
-code .keyword, code .control-flow { color: #c792ea !important; }  /* if, while, this など */
-code .boolean { color: #ff5874 !important; }                      /* true, false */
-code .number { color: #f78c6c !important; }                       /* 数値 */
-code .string { color: #ecc48d !important; }                       /* 文字列 */
-code .comment { color: #637777 !important; }                      /* コメント */
-code .identifier, code .variable, code .property { color: #82aaff !important; }  /* 識別子 */
-code .this, code .self { color: #c792ea !important; }
+// Night Owl風のシンタックスハイライト
+.highlight {
+  background: #011627 !important;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.highlight pre {
+  background-color: #011627 !important;
+  padding: 1em;
+  overflow: auto;
+}
+
+// インラインコードにも適用
+code, .highlight code {
+  background-color: #011627 !important;
+  color: #d6deeb !important;
+}
+
+---
+---
+
+@import "{{ site.theme }}";
+
+// Caymanテーマのダークモードカスタマイズ
+body {
+  background-color: #2d2d2d; // 中間の暗さの背景色
+  color: #e0e0e0; // 明るめの文字色
+}
+
+.page-header {
+  background-color: #155799;
+  background-image: linear-gradient(120deg, #155799, #443366); // ヘッダーの色調整
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #9ac9ff; // 見出しの色を明るめの青に
+}
+
+a {
+  color: #64aaff; // リンクの色
+}
+
+a:hover {
+  color: #9cc7ff; // ホバー時のリンクの色
+}
+
+// テーブルのスタイル調整
+.main-content table th,
+.main-content table td {
+  border: 1px solid #444;
+}
+
+.main-content table th {
+  background-color: #333;
+}
+
+.main-content table tr:nth-child(2n) {
+  background-color: #363636;
+}
+
+// Night Owl風のシンタックスハイライト
+.highlight {
+  background: #011627 !important;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.highlight pre {
+  background-color: #011627 !important;
+  padding: 1em;
+  overflow: auto;
+}
+
+// インラインコードにも適用
+code, .highlight code {
+  background-color: #011627 !important;
+  color: #d6deeb !important;
+}
+
+// 基本的なトークンに色を適用
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #637777 !important; } /* コメント */
+.highlight .k, .highlight .kd, .highlight .kc, .highlight .kt { color: #c792ea !important; } /* キーワード */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sr, .highlight .se { color: #ecc48d !important; } /* 文字列 */
+.highlight .nt { color: #7fdbca !important; } /* タグ */
+.highlight .na { color: #82aaff !important; } /* 属性名 */
+.highlight .nb { color: #82aaff !important; } /* ビルトイン */
+.highlight .nf { color: #82aaff !important; } /* 関数名 */
+.highlight .nc { color: #ffcb8b !important; } /* クラス名 */
+.highlight .nx { color: #d7dbe0 !important; } /* その他の名前 */
+.highlight .nl { color: #d9f5dd !important; } /* ラベル名 */
+.highlight .o, .highlight .p { color: #7fdbca !important; } /* 演算子と区切り記号 */
+.highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo { color: #f78c6c !important; } /* 数値 */
+.highlight .no, .highlight .bp { color: #ff5874 !important; } /* ブール値 */
+.highlight .kn, .highlight .kp, .highlight .kr, .highlight .ow { color: #c792ea !important; } /* その他のキーワード */
+.highlight .n, .highlight .vc, .highlight .vg, .highlight .vi { color: #d6deeb !important; } /* 変数など */
+.highlight .gd { color: #ff5874 !important; } /* 削除された行 */
+.highlight .gi { color: #7fdbca !important; } /* 挿入された行 */
+.highlight .w { color: #d6deeb !important; } /* スペース */
+
