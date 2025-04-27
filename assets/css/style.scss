@@ -58,6 +58,23 @@ a:hover {
   overflow: auto;
 }
 
+// コードブロックの枠線を削除
+.highlight {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+pre {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.highlighter-rouge {
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 1em;
+}
+
 // インラインコードにも適用
 code, .highlight code {
   background-color: #011627 !important;
