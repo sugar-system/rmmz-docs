@@ -64,72 +64,6 @@ code, .highlight code {
   color: #d6deeb !important;
 }
 
----
----
-
-@import "{{ site.theme }}";
-
-// Caymanテーマのダークモードカスタマイズ
-body {
-  background-color: #2d2d2d; // 中間の暗さの背景色
-  color: #e0e0e0; // 明るめの文字色
-}
-
-.page-header {
-  background-color: #155799;
-  background-image: linear-gradient(120deg, #155799, #443366); // ヘッダーの色調整
-}
-
-.main-content h1,
-.main-content h2,
-.main-content h3,
-.main-content h4,
-.main-content h5,
-.main-content h6 {
-  color: #9ac9ff; // 見出しの色を明るめの青に
-}
-
-a {
-  color: #64aaff; // リンクの色
-}
-
-a:hover {
-  color: #9cc7ff; // ホバー時のリンクの色
-}
-
-// テーブルのスタイル調整
-.main-content table th,
-.main-content table td {
-  border: 1px solid #444;
-}
-
-.main-content table th {
-  background-color: #333;
-}
-
-.main-content table tr:nth-child(2n) {
-  background-color: #363636;
-}
-
-// Night Owl風のシンタックスハイライト
-.highlight {
-  background: #011627 !important;
-  border-radius: 4px;
-  margin-bottom: 1em;
-}
-
-.highlight pre {
-  background-color: #011627 !important;
-  padding: 1em;
-  overflow: auto;
-}
-
-// インラインコードにも適用
-code, .highlight code {
-  background-color: #011627 !important;
-  color: #d6deeb !important;
-}
-
 // 基本的なトークンに色を適用
 .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #637777 !important; } /* コメント */
 .highlight .k, .highlight .kd, .highlight .kc, .highlight .kt { color: #c792ea !important; } /* キーワード */
@@ -149,4 +83,3 @@ code, .highlight code {
 .highlight .gd { color: #ff5874 !important; } /* 削除された行 */
 .highlight .gi { color: #7fdbca !important; } /* 挿入された行 */
 .highlight .w { color: #d6deeb !important; } /* スペース */
-
