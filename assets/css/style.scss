@@ -50,6 +50,8 @@ code {
   background-color: #363636;
 }
 
+
+
 // Night Owl風のシンタックスハイライト
 .highlight {
   background: #011627 !important;
@@ -77,11 +79,3 @@ code {
 .highlight .mi { color: #f78c6c !important; } /* 整数 */
 .highlight .kd { color: #c792ea !important; } /* 宣言キーワード */
 .highlight .kc { color: #82aaff !important; } /* 定数キーワード */
-
-/* 追加修正 - ブラケットと型定義を見やすく */
-.highlight .p { color: #d9f5dd !important; } /* 括弧やカンマなどの記号 */
-.highlight .kt { color: #c792ea !important; } /* 型キーワード (interface, number, string) */
-.highlight .n { color: #d6deeb !important; } /* 名前（変数名など）*/
-.highlight .bp { color: #ff5874 !important; } /* boolean（true/false）*/
-.highlight .no { color: #ff5874 !important; } /* boolean値のクラス */
-.highlight .cm, .highlight .c1 { color: #637777 !important; } /* 複数行コメントと単一行コメント */
