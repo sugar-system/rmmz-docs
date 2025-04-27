@@ -68,3 +68,12 @@ pre {
 .main-content table tr:nth-child(2n) {
   background-color: #363636;
 }
+
+// 特定のトークンタイプに色を強制適用
+code .keyword, code .control-flow { color: #c792ea !important; }  /* if, while, this など */
+code .boolean { color: #ff5874 !important; }                      /* true, false */
+code .number { color: #f78c6c !important; }                       /* 数値 */
+code .string { color: #ecc48d !important; }                       /* 文字列 */
+code .comment { color: #637777 !important; }                      /* コメント */
+code .identifier, code .variable, code .property { color: #82aaff !important; }  /* 識別子 */
+code .this, code .self { color: #c792ea !important; }
