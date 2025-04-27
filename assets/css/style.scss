@@ -49,3 +49,21 @@ code {
 .main-content table tr:nth-child(2n) {
   background-color: #363636;
 }
+
+// コードブロックのスタイル修正
+pre, pre.highlight, .highlight pre, .highlight {
+  background-color: #3a3a3a !important; // 強制上書き
+  color: #f0f0f0 !important;
+}
+
+// インラインコードにも適用
+code, .highlight code {
+  background-color: #3a3a3a !important;
+  color: #f0f0f0 !important;
+}
+
+// シンタックスハイライトの色調整
+.highlight .nt, .highlight .na, .highlight .s, .highlight .s1, .highlight .s2,
+.highlight .nb, .highlight .nc, .highlight .nf, .highlight .kd, .highlight .k {
+  color: inherit !important;
+}
