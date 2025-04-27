@@ -47,7 +47,13 @@ pre {
   color: #d6deeb !important;
 }
 
-
+// Jekyll のデフォルトカラーをオーバーライド
+.highlight .err, .highlight .g, .highlight .l, .highlight .n, .highlight .x, .highlight .p,
+.highlight .ge, .highlight .gp, .highlight .gs, .highlight .gt, .highlight .ld, .highlight .m,
+.highlight .s, .highlight .na, .highlight .nb, .highlight .nc, .highlight .nd, .highlight .ne,
+.highlight .nf, .highlight .ni, .highlight .nl {
+  color: inherit !important;
+}
 
 // テーブルのスタイル調整
 .main-content table th,
