@@ -62,8 +62,30 @@ code, .highlight code {
   color: #f0f0f0 !important;
 }
 
-// シンタックスハイライトの色調整
-.highlight .nt, .highlight .na, .highlight .s, .highlight .s1, .highlight .s2,
-.highlight .nb, .highlight .nc, .highlight .nf, .highlight .kd, .highlight .k {
-  color: inherit !important;
+// Night Owl風のシンタックスハイライト
+.highlight {
+  background: #011627 !important;
+  border-radius: 4px;
+  margin-bottom: 1em;
 }
+
+.highlight pre {
+  background-color: #011627 !important;
+  padding: 1em;
+  overflow: auto;
+}
+
+.highlight .c { color: #637777 !important; } /* コメント */
+.highlight .k { color: #c792ea !important; } /* キーワード */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #ecc48d !important; } /* 文字列 */
+.highlight .nt { color: #7fdbca !important; } /* タグ */
+.highlight .na { color: #82aaff !important; } /* 属性名 */
+.highlight .nb { color: #82aaff !important; } /* ビルトイン */
+.highlight .nf { color: #82aaff !important; } /* 関数名 */
+.highlight .nc { color: #ffcb8b !important; } /* クラス名 */
+.highlight .nx { color: #d7dbe0 !important; } /* その他の名前 */
+.highlight .nl { color: #d9f5dd !important; } /* ラベル名 */
+.highlight .o { color: #7fdbca !important; } /* 演算子 */
+.highlight .mi { color: #f78c6c !important; } /* 整数 */
+.highlight .kd { color: #c792ea !important; } /* 宣言キーワード */
+.highlight .kc { color: #82aaff !important; } /* 定数キーワード */
