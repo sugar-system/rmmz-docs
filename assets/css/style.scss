@@ -126,3 +126,24 @@ code, .highlight code {
 .highlight .gd { color: #ff5874 !important; } /* 削除された行 */
 .highlight .gi { color: #7fdbca !important; } /* 挿入された行 */
 .highlight .w { color: #d6deeb !important; } /* スペース */
+
+// リストと次の要素とのマージン調整
+.main-content {
+  ul, ol {
+    margin-bottom: 1.5em; // リストの後に続く要素との間のマージンを増やす
+  }
+
+  // リスト自体のマージンはそのままで、リストの後に続く要素とのスペースを確保
+  ul + p, ol + p,
+  ul + h1, ol + h1,
+  ul + h2, ol + h2,
+  ul + h3, ol + h3,
+  ul + h4, ol + h4,
+  ul + h5, ol + h5,
+  ul + h6, ol + h6,
+  ul + pre, ol + pre,
+  ul + blockquote, ol + blockquote,
+  ul + table, ol + table {
+    margin-top: 1.2em; // リストの後に続く要素の上マージンを増やす
+  }
+}
