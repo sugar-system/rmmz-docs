@@ -11,3 +11,5 @@
 
 - [コモンイベントの実行フローとコールスタック](core-scripts/コモンイベントの実行フローとコールスタック.md)
 - [Game_Interpreter とイベントの同期（ウェイトモード）](core-scripts/Game_Interpreterのウェイトモード.md)
+- [Game_Interpreter 実行終了の仕組み](core-scripts/Game_Interpreter実行終了の仕組み.md)
+- [Game_Interpreter の\_indent プロパティと分岐管理](core-scripts/Game_Interpreterの_indentプロパティと分岐管理.md)
