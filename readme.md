@@ -1,5 +1,9 @@
 # 目次
 
+## 戦闘シーン
+
+- [戦闘シーンでのメッセージ表示位置について](core-scripts/battle-message-position.md)
+
 ## メッセージウインドウ
 
 - [メッセージ表示の仕組みと速度調整](core-scripts/メッセージ表示の仕組みと速度調整.md)
